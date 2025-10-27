@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoginAntonioDelgadoPortero</string>
+    <string name="login_title">Inicio de Sesión</string>
+    <string name="hint_username">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="button_login">Acceder</string>
+    <string name="text_forgot_password">¿Olvidaste la contraseña?</string>
+    <string name="text_register_prompt">¿No tienes cuenta? Regístrate aquí</string>
+
+    <string name="welcome_message">¡Bienvenido, %s!</string>
+
+    <string name="toast_login_success">Acceso concedido</string>
+    <string name="error_field_required">Este campo no puede estar vacío</string>
+    <string name="error_invalid_credentials">Usuario o contraseña incorrectos</string>
+    <string name="toast_register_wip">Registro no implementado</string>
+    <string name="toast_forgot_wip">Recuperación no implementada</string>
+</resources>

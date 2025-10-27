@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoginAntonioDelgadoPortero</string>
+    <string name="login_title">Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Log In</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_register_prompt">Don\'t have an account? Register here</string>
+    <string name="welcome_message">Welcome, %s!</string>
+    <string name="toast_login_success">Login Successful</string>
+    <string name="error_field_required">This field cannot be empty</string>
+    <string name="error_invalid_credentials">Incorrect username or password</string>
+    <string name="toast_register_wip">Registration not implemented</string>
+    <string name="toast_forgot_wip">Password recovery not implemented</string>
+</resources>
