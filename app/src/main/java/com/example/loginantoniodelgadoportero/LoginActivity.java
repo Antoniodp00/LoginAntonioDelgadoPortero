@@ -3,6 +3,9 @@ package com.example.loginantoniodelgadoportero;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +42,40 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login);
         tvRegister = findViewById(R.id.tv_register);
         tvForgotPassword = findViewById(R.id.tv_forgot_password);
+
+        // 1. Cargar la animación que creamos en res/anim/fade_in.xml
+        // Primero, importa las clases necesarias al inicio de tu fichero:
+        // import android.view.animation.Animation;
+        // import android.view.animation.AnimationUtils;
+
+        Animation animFadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+
+        // 2. Identificar las vistas que queremos animar (ya deberías tenerlas)
+        ImageView loginLogo = findViewById(R.id.login_logo);
+        TextView loginTitle = findViewById(R.id.login_title);
+        // (tilUsername y tilPassword ya están declaradas arriba como variables de clase)
+
+        // 3. Aplicar la animación a cada vista
+        loginLogo.startAnimation(animFadeIn);
+
+        // 4. (Opcional, pero MUY recomendado) Crear un efecto escalonado
+        //    Reutilizamos la misma animación pero le añadimos un retraso (StartOffset)
+        //    para que los elementos no aparezcan todos a la vez.
+
+        // Retraso de 200ms para el título
+        Animation animFadeInDelay200 = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        animFadeInDelay200.setStartOffset(200); // 200 milisegundos de retraso
+        loginTitle.startAnimation(animFadeInDelay200);
+
+        // Retraso de 400ms para los campos de texto y el botón
+        Animation animFadeInDelay400 = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        animFadeInDelay400.setStartOffset(400); // 400 milisegundos de retraso
+
+        tilUsername.startAnimation(animFadeInDelay400);
+        tilPassword.startAnimation(animFadeInDelay400);
+        btnLogin.startAnimation(animFadeInDelay400);
+        tvRegister.startAnimation(animFadeInDelay400);
+        tvForgotPassword.startAnimation(animFadeInDelay400);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
