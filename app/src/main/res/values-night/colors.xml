@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryBlue">#42A5F5</color>
+    <color name="primaryDarkBlue">#1E88E5</color>
+    <color name="onPrimaryWhite">#000000</color>
+    <color name="accentOrange">#FF9800</color>
+    <color name="onAccentBlack">#000000</color>
+    <color name="app_background">#121212</color>
+    <color name="app_surface">#1E1E1E</color>
+</resources>
