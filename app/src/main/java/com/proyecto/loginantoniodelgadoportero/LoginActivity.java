@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.proyecto.loginantoniodelgadoportero.R;
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText usernameEditText;
@@ -67,23 +69,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // (Opcional) Navegación a RegisterActivity
+        // Navegación a RegisterActivity
         registerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                // startActivity(intent);
-                Toast.makeText(LoginActivity.this, "Navegando a la pantalla de registro...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
-        // (Opcional) Navegación a ForgotPasswordActivity
+        // Navegación a ForgotPasswordActivity
         forgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
-                // startActivity(intent);
-                Toast.makeText(LoginActivity.this, "Navegando a la pantalla de recuperación...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(intent);
             }
         });
     }
